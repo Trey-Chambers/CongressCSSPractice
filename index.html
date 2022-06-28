@@ -1,0 +1,34 @@
+<!--In your HTML, create an article element that will serve as your main representative component. Give the element a unique identifier.
+In this component, create a sub-component for basic information using the section element. In this section create elements for the representative's image, name, district info, and political affiliation.
+Beneath the basic information, you will create a sub-component, using a section element, to list any committees the candidate is serving on.
+The last component will hold links to any legislation that your representative has enacted.
+Make sure you use good BEM-style class names for each element in your components. Put a comment above each component explaining what it is. -->
+<!DOCTYPE html>
+<html>
+<!--Parent  rep component-->
+<article id = "West Virginia’s 3rd Congressional District">
+<!--Child rep component-->
+<section id = "rep -- 1">
+    <h1>Representative for 3rd District of West Virginia</h1>
+    <!--Carol Miller headshot-->
+    <img class = "img-carolMiller" src="img/carolMiller.jpeg" alt= "Representative for West Virginia's 3rd District">
+    <h3>Carol Miller</h3>
+    <h4>District: 3</h4>
+    <h4>Republican</h4>
+</section> 
+<!--child of parent rep listing committees-->
+<section id = rep-comittees>
+    Carol Miller sits on the following committees: 
+    <div>Committee on the Budget</div> 
+    <div>House Select Committee on the Climate Crisis</div>
+    <div>House Committee on Ways and Means</div>
+</section>
+<!--Child of parent rep componet listing sponsored bills-->
+<section id = rep-legislation>
+    <div>Miller was the primary sponsor of 2 bills that were enacted:</div>
+    <a href="https://www.govtrack.us/congress/bills/116/hr3362" target="_blank">H.R.3362(116th)Small Airport Mothers’ Rooms Act of 2019</a>
+    <a href="https://www.govtrack.us/congress/bills/116/hr4610" target="_blank">H.R. 4610 (116th): New River Gorge National Park and Preserve Designa</a>
+</section>
+
+</article>
+</html>
